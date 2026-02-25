@@ -1,0 +1,74 @@
+.cmc-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 2rem;
+  background: linear-gradient(90deg, #0f172a, #020617);
+  color: #f9fafb;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.7);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.cmc-header__brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cmc-header__logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  background: radial-gradient(circle at 30% 0%, #38bdf8, #4f46e5 45%, #0f172a 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 2px rgba(248, 250, 252, 0.2);
+}
+
+.cmc-header__logo-initials {
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.cmc-header__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.cmc-header__title {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.cmc-header__subtitle {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+.cmc-header__nav {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 640px) {
+  .cmc-header {
+    padding-inline: 1rem;
+  }
+
+  .cmc-header__title {
+    font-size: 1.1rem;
+  }
+
+  .cmc-header__subtitle {
+    font-size: 0.8rem;
+  }
+}
+

@@ -1,0 +1,26 @@
+<nav class="cmc-nav">
+  <button class="cmc-nav__toggle" type="button" (click)="toggle()">
+    <span class="cmc-nav__label">Menu</span>
+    <span class="cmc-nav__chevron" [class.cmc-nav__chevron--open]="open()">
+      ▼
+    </span>
+  </button>
+
+  @if (open()) {
+    <ul class="cmc-nav__dropdown" (mouseleave)="close()">
+      <li class="cmc-nav__item">
+        <a href="#home" (click)="close()">Home</a>
+      </li>
+      <li class="cmc-nav__item">
+        <a href="#services" (click)="close()">Services</a>
+      </li>
+      <li class="cmc-nav__item">
+        <a href="#about" (click)="close()">About</a>
+      </li>
+      <li class="cmc-nav__item">
+        <a href="#contact" (click)="close()">Contact Us</a>
+      </li>
+    </ul>
+  }
+</nav>
+
