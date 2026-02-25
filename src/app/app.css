@@ -1,0 +1,12 @@
+:host {
+  display: block;
+}
+
+.cmc-app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(circle at top left, #eff6ff, #f9fafb 40%, #e5e7eb 100%);
+  color: #020617;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}

@@ -1,0 +1,74 @@
+.cmc-nav {
+  position: relative;
+}
+
+.cmc-nav__toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  background: rgba(15, 23, 42, 0.8);
+  color: #e5e7eb;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.1s ease;
+}
+
+.cmc-nav__toggle:hover {
+  background: rgba(30, 64, 175, 0.9);
+  border-color: rgba(129, 140, 248, 0.7);
+  transform: translateY(-1px);
+}
+
+.cmc-nav__label {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+}
+
+.cmc-nav__chevron {
+  font-size: 0.7rem;
+  transition: transform 0.15s ease;
+}
+
+.cmc-nav__chevron--open {
+  transform: rotate(180deg);
+}
+
+.cmc-nav__dropdown {
+  position: absolute;
+  right: 0;
+  margin-top: 0.5rem;
+  min-width: 180px;
+  background: #020617;
+  border-radius: 0.75rem;
+  box-shadow:
+    0 18px 45px rgba(15, 23, 42, 0.8),
+    0 0 0 1px rgba(51, 65, 85, 0.7);
+  padding: 0.4rem 0;
+  list-style: none;
+  z-index: 120;
+}
+
+.cmc-nav__item a {
+  display: block;
+  padding: 0.6rem 1rem;
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 0.86rem;
+  white-space: nowrap;
+}
+
+.cmc-nav__item a:hover {
+  background: linear-gradient(90deg, rgba(59, 130, 246, 0.7), rgba(129, 140, 248, 0.7));
+  color: #f9fafb;
+}
+
+@media (max-width: 640px) {
+  .cmc-nav__dropdown {
+    width: 70vw;
+  }
+}
+
